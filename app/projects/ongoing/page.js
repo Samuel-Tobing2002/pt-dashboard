@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/api/projects")
+        const res = await fetch("/api/kegiatan")
         const result = await res.json()
         if (Array.isArray(result)) {
           setData(result)
